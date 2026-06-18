@@ -1,8 +1,0 @@
-{
-    "name": "精选电影合集-热门影片片库-高清视频在线播放",
-    "short_name": "精选电影合集",
-    "start_url": "index.html",
-    "display": "standalone",
-    "background_color": "#020617",
-    "theme_color": "#0ea5e9"
-}

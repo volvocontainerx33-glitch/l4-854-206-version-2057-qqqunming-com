@@ -1,0 +1,246 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+img {
+  display: block;
+}
+
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.h-9 {
+  height: 2.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.aspect-\[16\/9\] {
+  aspect-ratio: 16 / 9;
+}
+
+.bg-sky-500\/15 {
+  background-color: rgb(14 165 233 / 0.15);
+}
+
+.bg-sky-500\/25 {
+  background-color: rgb(14 165 233 / 0.25);
+}
+
+.hover\:bg-sky-500\/25:hover {
+  background-color: rgb(14 165 233 / 0.25);
+}
+
+.bg-sky-500\/90 {
+  background-color: rgb(14 165 233 / 0.9);
+}
+
+.bg-slate-800\/80 {
+  background-color: rgb(30 41 59 / 0.8);
+}
+
+.bg-slate-950\/60 {
+  background-color: rgb(2 6 23 / 0.6);
+}
+
+.border-slate-600 {
+  border-color: #475569;
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:border-sky-400:focus {
+  border-color: #38bdf8;
+}
+
+.shadow-sky-500\/20 {
+  --tw-shadow-color: rgb(14 165 233 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover\:-translate-y-1:hover {
+  transform: translateY(-0.25rem);
+}
+
+
+.hero-section {
+  background: #020617;
+}
+
+.hero-slide {
+  pointer-events: none;
+}
+
+.hero-slide.active {
+  pointer-events: auto;
+}
+
+.hero-glow {
+  background: radial-gradient(circle at 20% 70%, rgba(14, 165, 233, 0.28), transparent 30%), radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.2), transparent 28%);
+}
+
+.section-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-right: 0.75rem;
+  border-radius: 999px;
+  background: rgba(14, 165, 233, 0.14);
+  color: #38bdf8;
+  font-size: 1rem;
+  box-shadow: 0 0 24px rgba(14, 165, 233, 0.18);
+}
+
+.movie-card {
+  transform-origin: center;
+}
+
+.movie-card img {
+  background: #0f172a;
+}
+
+.card-play {
+  z-index: 4;
+}
+
+.category-card {
+  min-height: 100%;
+}
+
+.rank-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 8;
+  min-width: 2rem;
+  height: 2rem;
+  padding: 0 0.55rem;
+  border-radius: 999px;
+  background: rgba(14, 165, 233, 0.94);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  box-shadow: 0 10px 30px rgba(14, 165, 233, 0.35);
+}
+
+.filter-chip {
+  border-radius: 0.65rem;
+  background: #1e293b;
+  color: #d1d5db;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filter-chip:hover,
+.filter-chip.is-active {
+  background: #0ea5e9;
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(14, 165, 233, 0.25);
+}
+
+.info-pill,
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.6rem;
+  background: #334155;
+  color: #d1d5db;
+  padding: 0.45rem 0.75rem;
+}
+
+.tag-pill {
+  background: rgba(14, 165, 233, 0.12);
+  color: #7dd3fc;
+  border: 1px solid rgba(14, 165, 233, 0.22);
+}
+
+.player-shell {
+  isolation: isolate;
+}
+
+.player-cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 5;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  background: #000;
+}
+
+.player-shell.is-playing .player-cover {
+  display: none;
+}
+
+.player-poster {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(0.72);
+}
+
+.player-shade {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(14, 165, 233, 0.12), rgba(2, 6, 23, 0.7));
+}
+
+.player-button {
+  position: relative;
+  z-index: 6;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(14, 165, 233, 0.95);
+  color: #fff;
+  font-size: 2rem;
+  box-shadow: 0 20px 60px rgba(14, 165, 233, 0.4);
+  padding-left: 0.25rem;
+}
+
+.search-panel input::placeholder {
+  color: #64748b;
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    height: 72vh;
+  }
+
+  .player-button {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.6rem;
+  }
+}
